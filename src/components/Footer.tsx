@@ -10,15 +10,15 @@ const Footer: React.FC = () => {
   return (
     <footer className="relative text-white">
       {/* Background Image */}
-      <div className="bg-[url('../public/assets/footer-bg.jpg')] absolute inset-0 bg-cover bg-center"></div>
+      <div className="bg-[url('../public/assets/footer-bg.jpg')] absolute inset-0 bg-cover bg-left "></div>
       {/* Overlay */}
       <div className="absolute inset-0 bg-blue-900 opacity-25"></div>
       {/* Content */}
       <div className="relative z-10 max-w-md mx-auto px-6 py-10 flex flex-col items-center text-center space-y-10">
         {/* Logo and Description */}
         <div className="flex flex-col items-center space-y-4">
-          <img src="../public/assets/logo.png" alt="Gilges Logo" className="h-20 mb-5" />
-          <p className="text-lg leading-[2.5rem] tracking-[1.8px]">
+          <img src="../public/assets/logo.png" alt="Gilges Logo" className="h-15 mb-5 mt-10" />
+          <p className="text-md leading-[2.0rem] tracking-[1.2px]">
             Als traditionelles Familienunternehmen
             <br /> sind wir vor allem eines: immer ganz nah
             <br /> dran an unseren Kunden. Indem wir ihre
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Social Media */}
-        <div className="flex gap-17 text-3xl">
+        <div className="flex gap-12 text-3xl">
           <a href="#" className="hover:text-sky-500">
             <FontAwesomeIcon icon={faFacebook} />
           </a>

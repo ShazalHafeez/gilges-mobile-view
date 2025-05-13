@@ -11,19 +11,19 @@ const Card: React.FC<{
   return (
     <div
       onClick={onClick}
-      className="w-full md:w-100% h-90 bg-[#2793db] shadow-md flex flex-col items-center justify-center cursor-pointer transition transform hover:scale-95 active:scale-90"
+      className="w-full md:w-100% h-70 bg-[#2793db] shadow-md flex flex-col items-center justify-center cursor-pointer transition transform hover:scale-95 active:scale-90"
     >
       {/* Logo */}
       <div className="flex items-center justify-center h-19 w-19 rounded-full bg-[#07243c] text-white">
         <FontAwesomeIcon icon={icon} size="2xl" />
       </div>
       {/* Title */}
-      <h2 className="text-white text-4xl font-bold m-6 font-primary tracking-widest">
+      <h2 className="text-white text-4xl font-bold m-4 font-primary tracking-widest">
         {title}
       </h2>
       {/* Description */}
       <div className="text-white text-center">
-        <p className="text-lg tracking-[1.8px]">{description}</p>
+        <p className="text-md tracking-[1.2px]">{description}</p>
       </div>
     </div>
   );
