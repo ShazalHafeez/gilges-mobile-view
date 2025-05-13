@@ -1,0 +1,13 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.bg-darkBlue {
+  background-color: #003049;
+}
+
+.bg-lightBlue {
+  background-color: #80B1D2;
+}
