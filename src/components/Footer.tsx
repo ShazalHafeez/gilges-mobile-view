@@ -17,7 +17,11 @@ const Footer: React.FC = () => {
       <div className="relative z-10 max-w-md mx-auto px-6 py-10 flex flex-col items-center text-center space-y-10">
         {/* Logo and Description */}
         <div className="flex flex-col items-center space-y-4">
-          <img src="../public/assets/logo.png" alt="Gilges Logo" className="h-15 mb-5 mt-10" />
+          <img
+            src="../public/assets/logo.png"
+            alt="Gilges Logo"
+            className="h-15 mb-5 mt-10"
+          />
           <p className="text-md leading-[2.0rem] tracking-[1.2px]">
             Als traditionelles Familienunternehmen
             <br /> sind wir vor allem eines: immer ganz nah
@@ -48,7 +52,10 @@ const Footer: React.FC = () => {
             Quick Links
           </h3>
           <div className="w-12 h-1 bg-white mx-auto mb-6"></div>
-          <a href="#" className="hover:text-sky-500 text-xl">
+          <a
+            href="https://webversion-gilgesltw.hakmitec.com/"
+            className="hover:text-sky-500 text-xl"
+          >
             Home
           </a>
         </div>
