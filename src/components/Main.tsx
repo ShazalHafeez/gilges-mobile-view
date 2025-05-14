@@ -11,7 +11,7 @@ const Card: React.FC<{
   return (
     <div
       onClick={onClick}
-      className="w-full md:w-100% h-70 bg-[#2793db] shadow-md flex flex-col items-center justify-center cursor-pointer transition transform hover:scale-95 active:scale-90"
+      className="w-full max-w-[400px] h-70 bg-[#2793db] shadow-md flex flex-col items-center justify-center cursor-pointer transition transform hover:scale-95 active:scale-90"
     >
       {/* Logo */}
       <div className="flex items-center justify-center h-19 w-19 rounded-full bg-[#07243c] text-white">
@@ -56,9 +56,24 @@ const Main: React.FC = () => {
           </>
         }
       />
-      <Card
+      {/* Kontakt Card → download/import VCF */}
+      <a href="/GILGES-LTW.vcf" download className="block w-full max-w-[400px]">
+        <Card
+          icon={faUser}
+          title="Kontakt"
+          description={
+            <>
+              Möchten Sie uns direkt zu Ihrem
+              <br />
+              Adressbuch hinzufügen?
+            </>
+          }
+        />
+      </a>
+      {/* <Card
         icon={faUser}
         title="Kontakt"
+        onClick={() => {window.location.href = "../public/assets/GILGES-LTW.vcf";}}
         description={
           <>
             Möchten Sie uns direkt zu Ihrem
@@ -66,7 +81,7 @@ const Main: React.FC = () => {
             Adressbuch hinzufügen?
           </>
         }
-      />
+      /> */}
     </main>
   );
 };
