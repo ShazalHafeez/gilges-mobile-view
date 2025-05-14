@@ -57,7 +57,11 @@ const Main: React.FC = () => {
         }
       />
       {/* Kontakt Card → download/import VCF */}
-      <a href="/GILGES-LTW.vcf" download className="block w-full max-w-[400px]">
+      <a
+        href="../public/assets/GILGES-LTW.vcf"
+        download
+        className="block w-full max-w-[400px]"
+      >
         <Card
           icon={faUser}
           title="Kontakt"
