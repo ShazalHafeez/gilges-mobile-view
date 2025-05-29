@@ -9,7 +9,7 @@ const Header: React.FC = () => {
           <img
             src="../public/assets/logo.png"
             alt="Gilges Logo"
-            className="h-13 w-58 mb-7"
+            className="h-14 w-60 mb-7"
           />
           <h1
             className="text-4xl font-bold text-center text-white font-primary tracking-wide"
